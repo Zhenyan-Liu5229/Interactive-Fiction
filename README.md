@@ -11,6 +11,6 @@ Finally I would like to express my gratitude to Dr.Dave Ciccoricco for his wonde
 ***
 ## How to start?
 1. Have [Python](https://www.python.org/downloads/) installed on your computer.
-2. Remember to download **BOTH** 'Interactive_Fiction.py' and 'Scene.py' to the **SAME** place.
-3. Open CMD, call Python to run 'Interactive_Fiction.py'. 
+2. Clone this project to local.
+3. Open CMD, call Python to run 'python Interactive_Fiction.py' in the terminal.
 4. Have fun :)
