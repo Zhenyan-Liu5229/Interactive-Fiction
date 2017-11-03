@@ -1,4 +1,4 @@
-# Interactive-Fiction
+# Interactive Fiction Game Project
 
 ## What is it?  
 This is an Interactive Fiction game written in Python.
