@@ -1,8 +1,3 @@
-#An interactive fiction game.
-#It is about my experiences of Digital Literature workshops when I was on exchange to University of Otago, New Zealand in 2016. 
-#I have wrote a paper draft of it as the final project of that course.
-#The code I put here are based on the toturial from https://randomgeekery.org/post/2007/01-handling-a-single-round/.
-
 from Scene import scenes
 import sys
 import random
