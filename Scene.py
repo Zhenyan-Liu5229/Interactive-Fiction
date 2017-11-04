@@ -1,34 +1,67 @@
-cenes = {
+scenes = {
     'beginning':{
-    'description':'''You wake up. 
-    It’s ten to one in the afternoon, a plain and dull Friday afternoon. 
-    You are sitting in a computer lab, alone, with over thirty computers but no other fellow students. 
-    You are very anxious because you are supposed to have the last workshop for ENG342 here. 
-    No, there is no one. No Dave or David. 
-    The computer in front of you requires your user name and password.
+    'description':'''You woke up. 
+    It’s ten to one in the afternoon. A normal Friday afternoon, plain and dull as ever.
+    You were sitting inside a computer lab, alone. Thirty computers were your only companion.
+    You were very anxious. You were supposed to have the last workshop for ENG342, but no one appeared. 
+    No, there was no one. No Dave or David. 
+    The computer screen in front of you shone brightly, requiring a username and a password.
     ''',
     'paths':[
-    {'do':'enter', 'phrase':'type your username'},
+    {'do':'enter', 'phrase':'enter your username'},
     {'do':'shut_down', 'phrase':'shut down the computer'}
     ]
 },
+
+    #ending 1: whether to enter the username or not
     'shut_down':{
-    'description':'You think that you probably remember the wrong class time.It is better to shut down the computer and leave.',
+    'description':'''You thought you probably got the class time wrong. You were so exausted by arduous readings for ENG242 last night.
+    Better to shut down the computer and leave.
+    It would take you twenty minutes to walk back to your flat.
+    I need some sleep... ''',
     'paths':[]
 },
+
     'enter':{
-    'description':'''As soon as you finish typing, the password appears automatically on the screen, and the computer unlocks. 
-    Suddenly all the surroundings are gone.
-    One hand reaches from the computer screen and drags you into it.
+    'description':'''The password was automatically filled in as soon as you typed your username.
+    You were amazed. You thought you were a cautious person who never allowed public computers to remember your password.
+    Just as you were wondering, one shadowy hand reached out from the computer screen and dragged you towards it. 
+    What were you going to do?
     ''',
     'paths':[
-    {'do':'start', 'phrase':'look around'}
+    {'do':'subdue', 'phrase':'do nothing.'},
+    {'do':'resist','phrase':'try your best to resist.'}
     ]
 },
+
+    #ending 2: whether to resist or not. Added on 11/04/2017
+    'subdue':{
+    'description':'''You did not want to resist.
+    Instead, you were curious about what would happen next.
+    After all, better an adventure than nothing!
+    Then -- you were teleported into another world.
+    ''',
+    'paths':[
+    {'do':'start','phrase':'look aorund'}
+    ]
+},
+    
+    'resist':{
+    'description':'''You did not want to be captured away.
+    You did not want to leave this world though you still had lots of work to do.
+    You gathered up all your strength to fight.
+    Time stopped.
+    You lost yourself in this fight, forever.
+    ''',
+    'paths':[]
+},
+    # up revised 2017.11.04
+
     'start':{
-    'description':'''You are standing in the center of a mystic world.
+    'description':'''You were standing in the center of a mystic world.
     Around you are digital screens marked with numbers.
-    There are four screens you can choose to look at.
+    There are three screens you can choose to look at.
+    PS. You can also try the random mode!
     ''',
     'paths':[
     {'do':'No.2', 'phrase':'Look at No.2'},
@@ -55,6 +88,7 @@ cenes = {
     'description':'''The voice is so compelling that you unconsciously obey him.
     You move Stanley through the left door. 
     You are in the world center again.
+    Looks like obedience is always right.
     ''',
     'paths':[
     {'do':'No.3', 'phrase':'Look at No.3'},
@@ -67,10 +101,10 @@ cenes = {
     'description':'''You are a person of strong free will.
     Obey a commanding stranger like him?
     Never!
-    Stanley walks through the right door and never comes back.
+    Stanley walks through the right door and never comes back. 
     ''',
     'paths':[]
-},
+}, #consider modifying it into a loop (right door == loope several times and ultimately never comes back)
 
     #hypertext 253
     'No.3':{
