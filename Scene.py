@@ -29,8 +29,8 @@ scenes = {
     What were you going to do?
     ''',
     'paths':[
-    {'do':'subdue', 'phrase':'do nothing.'},
-    {'do':'resist','phrase':'try your best to resist.'}
+    {'do':'subdue', 'phrase':'do nothing'},
+    {'do':'resist','phrase':'try your best to resist'}
     ]
 },
 
@@ -58,9 +58,10 @@ scenes = {
     # up revised 2017.11.04
 
     'start':{
-    'description':'''You were standing in the center of a mystic world.
-    Around you are digital screens marked with numbers.
-    There are three screens you can choose to look at.
+    'description':'''You were standing in the center of a mysterious world.
+    Around you are digital screens flying like torn textbooks on the day of your high school graduation.
+    They were flashing with inridescent lights, all beaming at you.
+    Three of them were close at you hand. They were waiting for you to look at.
     PS. You can also try the random mode!
     ''',
     'paths':[
@@ -71,24 +72,53 @@ scenes = {
     ]
 },
 
+
     #The Stanley parable
     'No.7':{
     'description':'''Workshop7 -- The Stanley Parable
-    You are playing The Stanley Parable. 
-    Now your character, Stanley, is facing two open doors. 
-    A loud male voice is repeating “Stanley chooses the door on his left”. 
-    Are you going to obey him?
+    You were playing The Stanley Parable. 
+    Stanley, the charactor under your control, was standing in front of two open doors. You could not discern the difference between them.
+    A loud male voice was repeating, "Stanley chooses the door on his left." 
+    Who was he? Were you going to obey him?
     ''',
     'paths':[
-    {'do':'obey', 'phrase':'Move Stanley to the left door'},
-    {'do':'disobey', 'phrase':'Move Stanley to the right door'}
+    {'do':'first_obey', 'phrase':'Move Stanley to the left door'},
+    {'do':'first_disobey', 'phrase':'Move Stanley to the right door'}
     ]
 },
-    'obey':{
-    'description':'''The voice is so compelling that you unconsciously obey him.
-    You move Stanley through the left door. 
-    You are in the world center again.
-    Looks like obedience is always right.
+
+    'first_obey':{
+    'description':'''The voice was so compelling that you unconsciously obeyed him.
+    You moved Stanley through the left door. 
+    Stanley passed through the meeting room and came to a stairway, one way up and one way down.
+    The male voice continued, "Stanley goes upstairs."
+    Aha, once again?
+    ''',
+    'paths':[
+    {'do':'second_obey', 'phrase':'Move Stanley upstairs'},
+    {'do':'second_disobey', 'phrase':'Move Stanley downstairs'}
+    ]
+},
+
+    'second_obey':{
+    'description':'''You chose to obey the voice again.
+    Stanley went upstairs. He realized that it was his boss' big office.
+    "Stanley enters the office."
+    It was so natural, wasn't it?
+    ''',
+    'paths':[
+    {'do':'final_obey', 'phrase':'Enter the office'},
+    {'do':'final_disobey', 'phrase':'Turn back'}
+    ]
+},
+
+    'final_obey':{
+    'description':'''You steped into the luxurious office.
+    Suddenly, the room started to shake.
+    You found a place to hide and close your eyes.
+    When the earthquake stoped, you discovered yourself in the center of digital screens again.
+    I survived, you thought. Looked like obedience was always the right choice.
+    I love obedience.
     ''',
     'paths':[
     {'do':'No.3', 'phrase':'Look at No.3'},
@@ -97,14 +127,64 @@ scenes = {
     {'do':'random', 'phrase':'Look at a random screen'}
     ]
 },
-    'disobey':{
-    'description':'''You are a person of strong free will.
+    #ending 3: whether to obey or not in the first place.
+    'first_disobey':{
+    'description':'''You were a person of strong free will.
     Obey a commanding stranger like him?
     Never!
-    Stanley walks through the right door and never comes back. 
+    Stanley walked through the right door and never came back. 
     ''',
     'paths':[]
-}, #consider modifying it into a loop (right door == loope several times and ultimately never comes back)
+}, 
+
+    'second_disobey':{
+    'description':'''First obey and then do the opposite? Not a bad idea, indeed.
+    Well, welcome to my laboratory.
+    Don't worry, just a little spelling test.
+    Now, please type "Obedience". 
+    ''',
+    'paths':[
+    {'do':'test2', 'phrase':'type "Obedience"'}
+    ]
+},
+
+    'test2':{
+    'description':'''Good. 
+    Now next one. Type "is".
+    ''',
+    'paths':[
+    {'do':'test3', 'phrase':'type "is"'}
+    ]
+},
+    
+    'test3':{
+    'description':'''See? It's easy.
+    Just listen to me, and everything will be fine.
+    Next. "everything".
+    ''',
+    'paths':[
+    {'do':'test_end', 'phrase':'type "everything"'}
+    ]
+},
+    #ending5:obedience is death.
+    'test_end':{
+    'description':'''You know what?
+    I discover that you know how to obey. Know it very well.
+    You passed this test. Congratulations! 
+    But I can't let you live.
+    ''',
+    'paths':[]
+},
+    #ending4: whether to obey or not in the last choice.
+    'final_disobey':{
+    'description':'''The office door shut tight as you turned your back towards it.
+    The stairway through which you came disappeared.
+    You were stuck in the hallway.
+    There was no way out.
+    ''',
+    'paths':[]
+},
+    #up revised and expanded 2017.11.05
 
     #hypertext 253
     'No.3':{
