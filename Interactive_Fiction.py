@@ -93,7 +93,7 @@ while True:
         next_phrase = str.lower(next_step['phrase'])
         readstatus(next_step['do'])
         print('''*************************************
-You decided to''', next_phrase, '.')
+You decided to %s.''' %next_phrase)
         
         if scene == {}: #random mode
             screen_number = random.choice(numbers)
