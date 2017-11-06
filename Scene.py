@@ -1,6 +1,7 @@
 scenes = {
     'beginning':{
-    'description':'''You woke up. 
+    'description':'''
+    You woke up. 
     It’s ten to one in the afternoon. A normal Friday afternoon, plain and dull as ever.
     You were sitting inside a computer lab, alone. Thirty computers were your only companion.
     You were very anxious. You were supposed to have the last workshop for ENG342, but no one appeared. 
@@ -15,7 +16,8 @@ scenes = {
 
     #ending 1: whether to enter the username or not
     'shut_down':{
-    'description':'''You thought you probably got the class time wrong. You were so exausted by arduous readings for ENG242 last night.
+    'description':'''
+    You thought you probably got the class time wrong. You were so exausted by arduous readings for ENG242 last night.
     Better to shut down the computer and leave.
     It would take you twenty minutes to walk back to your flat.
     I need some sleep... ''',
@@ -23,7 +25,8 @@ scenes = {
 },
 
     'enter':{
-    'description':'''The password was automatically filled in as soon as you typed your username.
+    'description':'''
+    The password was automatically filled in as soon as you typed your username.
     You were amazed. You thought you were a cautious person who never allowed public computers to remember your password.
     Just as you were wondering, one shadowy hand reached out from the computer screen and dragged you towards it. 
     What were you going to do?
@@ -36,7 +39,8 @@ scenes = {
 
     #ending 2: whether to resist or not. Added on 11/04/2017
     'subdue':{
-    'description':'''You did not want to resist.
+    'description':'''
+    You did not want to resist.
     Instead, you were curious about what would happen next.
     After all, better an adventure than nothing!
     Then -- you were teleported into another world.
@@ -47,7 +51,8 @@ scenes = {
 },
     
     'resist':{
-    'description':'''You did not want to be captured away.
+    'description':'''
+    You did not want to be captured away.
     You did not want to leave this world though you still had lots of work to do.
     You gathered up all your strength to fight.
     Time stopped.
@@ -58,7 +63,8 @@ scenes = {
     # up revised 2017.11.04
 
     'start':{
-    'description':'''You were standing in the center of a mysterious world.
+    'description':'''
+    You were standing in the center of a mysterious world.
     Around you are digital screens flying like torn textbooks on the day of your high school graduation.
     They were flashing with inridescent lights, all beaming at you.
     Three of them were close at you hand. They were waiting for you to look at.
@@ -75,9 +81,11 @@ scenes = {
 
     #The Stanley parable
     'No.7':{
-    'description':'''Workshop7 -- The Stanley Parable
+    'description':'''
+    Workshop7 -- The Stanley Parable
     You were playing The Stanley Parable. 
-    Stanley, the charactor under your control, was standing in front of two open doors. You could not discern the difference between them.
+    Stanley, the charactor under your control, was standing in front of two open doors. 
+    You could not discern the difference between them.
     A loud male voice was repeating, "Stanley chooses the door on his left." 
     Who was he? Were you going to obey him?
     ''',
@@ -88,7 +96,8 @@ scenes = {
 },
 
     'first_obey':{
-    'description':'''The voice was so compelling that you unconsciously obeyed him.
+    'description':'''
+    The voice was so compelling that you unconsciously obeyed him.
     You moved Stanley through the left door. 
     Stanley passed through the meeting room and came to a stairway, one way up and one way down.
     The male voice continued, "Stanley goes upstairs."
@@ -101,7 +110,8 @@ scenes = {
 },
 
     'second_obey':{
-    'description':'''You chose to obey the voice again.
+    'description':'''
+    You chose to obey the voice again.
     Stanley went upstairs. He realized that it was his boss' big office.
     "Stanley enters the office."
     It was so natural, wasn't it?
@@ -113,7 +123,8 @@ scenes = {
 },
 
     'final_obey':{
-    'description':'''You steped into the luxurious office.
+    'description':'''
+    You steped into the luxurious office.
     Suddenly, the room started to shake.
     You found a place to hide and close your eyes.
     When the earthquake stoped, you discovered yourself in the center of digital screens again.
@@ -129,7 +140,8 @@ scenes = {
 },
     #ending 3: whether to obey or not in the first place.
     'first_disobey':{
-    'description':'''You were a person of strong free will.
+    'description':'''
+    You were a person of strong free will.
     Obey a commanding stranger like him?
     Never!
     Stanley walked through the right door and never came back. 
@@ -138,7 +150,8 @@ scenes = {
 }, 
 
     'second_disobey':{
-    'description':'''First obey and then do the opposite? Not a bad idea, indeed.
+    'description':'''
+    First obey and then do the opposite? Not a bad idea, indeed.
     Well, welcome to my laboratory.
     Don't worry, just a little spelling test.
     Now, please type "Obedience". 
@@ -149,7 +162,8 @@ scenes = {
 },
 
     'test2':{
-    'description':'''Good. 
+    'description':'''
+    Good. 
     Now next one. Type "is".
     ''',
     'paths':[
@@ -158,7 +172,8 @@ scenes = {
 },
     
     'test3':{
-    'description':'''See? It's easy.
+    'description':'''
+    See? It's easy.
     Just listen to me, and everything will be fine.
     Next. "everything".
     ''',
@@ -168,7 +183,8 @@ scenes = {
 },
     #ending5:obedience is death.
     'test_end':{
-    'description':'''You know what?
+    'description':'''
+    You know what?
     I discover that you know how to obey. Know it very well.
     You passed this test. Congratulations! 
     But I can't let you live.
@@ -177,7 +193,8 @@ scenes = {
 },
     #ending4: whether to obey or not in the last choice.
     'final_disobey':{
-    'description':'''The office door shut tight as you turned your back towards it.
+    'description':'''
+    The office door shut tight as you turned your back towards it.
     The stairway through which you came disappeared.
     You were stuck in the hallway.
     There was no way out.
@@ -188,10 +205,11 @@ scenes = {
 
     #hypertext 253
     'No.3':{
-    'description':'''Workshop3 -- Hypertext
-    You are reading 253, a hypertext about a London underground train. 
-    There is a map of passengers in car 2 of that train. 
-    Each passenger has his/her interests written below his/her name.
+    'description':'''
+    Workshop3 -- Hypertext
+    You were reading 253 (Or Tube Theatre), a hypertext about a London underground train. 
+    There was a map of passengers in the car 2. 
+    Each passenger had their interests written below their names.
     ''',
     'paths':[
     {'do':'passenger63', 'phrase':'select passenger 63'}, 
@@ -199,21 +217,29 @@ scenes = {
     {'do':'close_screen', 'phrase':'close the screen'}
     ]
 },
+    #ending6: suggested reading1
     'passenger63':{
-    'description':'''Passenger 63:Oliver Maskey. For more information, visit http://www.ryman-novel.com/car2/63.htm.\
-    I hope you will find it interesting!''',
+    'description':'''
+    Passenger 63:Oliver Maskey. 
+    Emmmm. Quite interesting.
+    What? You saw nothing?
+    Better find this novel online and finish it! Good luck with your reading~''',
     'paths':[]
 },
+    #ending6: suggested reading2
     'passenger42':{
-    'description':'''Passenger 41:Mr Chris Green. For more information, visit http://www.ryman-novel.com/car2/41.htm\
-    I hope you will find it interesting!
-    And I tell you --
-    that the train will crash in the end.''',
+    'description':'''
+    Passenger 41:Mr Chris Green. 
+    Let me tell you somgthing --
+    the train has crashed in the end!''',
     'paths':[]
 },
+
     'close_screen':{
-    'description':'''You decide not to read this hypertext. You don't like to read and click.
-    Instead, you turn around, and look at other screens.''',
+    'description':'''
+    You decided not to read this hypertext. Heard of annoying clickings from your classmates.
+    Traditional novels were your true love.
+    You turned around and looked at other screens.''',
     'paths':[
     {'do':'No.2', 'phrase':'Look at No.2'},
     {'do':'No.4', 'phrase':'Look at No.4'},
@@ -222,9 +248,11 @@ scenes = {
     ]
 },
     
+
     #telescopic texts
     'No.2':{
-    'description':'''Workshop2 -- Telescopic Text
+    'description':'''
+    Workshop2 -- Telescopic Text
     You are writing a telescopic text. 
     For your sake, please do not visit http://www.telescopictext.org/text/kEVYF0kNK18qY. 
     When you finish reading, screen No.2 is replaced by No.5.
@@ -239,7 +267,8 @@ scenes = {
     
     #Shadow of Colussus
     'No.5':{
-    'description':'''Workshop5 -- Game and Narratives I 
+    'description':'''
+    Workshop5 -- Game and Narratives I 
     You are playing Shadow of Colossus, an exciting PS4 game.
     This is the first time you play with a Joystick.
     Of course, you are not playing for fun.
@@ -254,7 +283,8 @@ scenes = {
     
     #The God of War
     'No.6':{
-    'description':'''Workshop6 -- Game and Narratives II 
+    'description':'''
+    Workshop6 -- Game and Narratives II 
     Another game? Yeah!
     This time you are playing The God of War.
     It is too hard to control the character.
@@ -270,7 +300,8 @@ scenes = {
     
     #Interactive fiction
     'No.9':{
-    'description':'''Workshop9 -- Interactive Fiction 
+    'description':'''
+    Workshop9 -- Interactive Fiction 
     Hey, isn't Interactive Fiction similar to RPGs?
     Can you solve the puzzle in Winchester's Nightmare?
     (Listen to the shell first!)
@@ -287,7 +318,8 @@ scenes = {
     
     #Digital poetry
     'No.4':{
-    'description':'''Workshop4 -- Digital Poetry
+    'description':'''
+    Workshop4 -- Digital Poetry
     Poetry.
     You said to yourself.
     You are never going to like it.
@@ -305,7 +337,8 @@ scenes = {
     
     #MUDs
     'No.10':{
-    'description':'''Workshop10 -- MUDs
+    'description':'''
+    Workshop10 -- MUDs
     Role-playing! I like it!
     Emmmm.How about a wood elf with a pet wolf?
     Wait, you there, you can't eat my wolf!
@@ -321,7 +354,8 @@ scenes = {
     
     #first workshop
     'No.1':{
-    'description':'''Workshop1 -- Tactile Narratives
+    'description':'''
+    Workshop1 -- Tactile Narratives
     Well, the beginning of workshops.
     You are very nervous, because you know you are going to introduce yourself to other students.
     I am just an exchange student. What am I supposed to say?
@@ -335,7 +369,8 @@ scenes = {
     
     #last workshop
     'No.11':{
-    'description':'''Workshop11 -- Final Assembly
+    'description':'''
+    Workshop11 -- Final Assembly
     Welcome to the Final Web Project Assembly.
     You are taught to create links to other students'work.
     Is that the end? You ask yourself.
