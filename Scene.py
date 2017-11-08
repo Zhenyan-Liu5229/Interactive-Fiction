@@ -253,9 +253,34 @@ scenes = {
     'No.2':{
     'description':'''
     Workshop2 -- Telescopic Text
-    You are writing a telescopic text. 
-    For your sake, please do not visit http://www.telescopictext.org/text/kEVYF0kNK18qY. 
-    When you finish reading, screen No.2 is replaced by No.5.
+    You were writing a telescopic text. 
+    New to you, and very interesting.
+    Spelling mistakes are no longer mistakes -- they are art. 
+    Do you want to have a try?
+    ''',
+    'paths':[
+    {'do':'try', 'phrase':'have a try'},
+    {'do':'not_try', 'phrase':'look at others\'work'}
+    ]
+},
+
+    'not_try':{
+    'description':'''
+    You were eager to read than to write.
+    Very well. If you don't mind, you can look at mine.
+    http://www.telescopictext.org/text/kEVYF0kNK18qY.
+    You have to close this game to visit the website. 
+    ''',
+    'paths':[]
+},
+
+    'try':{
+    'description':'''
+    Wake up man, you are in another world!
+    You have to leave this this place first and then to do whatever you want.
+    As you were thinking of a way out,
+    screen No.2 was silently replaced by No.5.
+    Time to go on then.
     ''',
     'paths':[
     {'do':'No.7','phrase':'Look at No.7'},
@@ -269,10 +294,11 @@ scenes = {
     'No.5':{
     'description':'''
     Workshop5 -- Game and Narratives I 
-    You are playing Shadow of Colossus, an exciting PS4 game.
-    This is the first time you play with a Joystick.
-    Of course, you are not playing for fun.
-    You need to write a 2500-word essay about it.
+    You were playing Shadow of Colossus, an exciting PS4 game.
+    It was the first time you played with a Joystick. 
+    You tried your best to balance your hands but they didn't cooperate.
+    Another word. You were not playing for fun.
+    You was supposed to write a 2500-word essay about it after playing.
     ''',
     'paths':[
     {'do':'No.3','phrase':'Look at No.3'},
@@ -286,9 +312,9 @@ scenes = {
     'description':'''
     Workshop6 -- Game and Narratives II 
     Another game? Yeah!
-    This time you are playing The God of War.
-    It is too hard to control the character.
-    You are very distressed.
+    This time you were playing The God of War.
+    It was too hard to control the character. The same as last time.
+    You were very distressed.
     So how about playing with texts instead of games?
     ''',
     'paths':[
@@ -297,7 +323,8 @@ scenes = {
     {'do':'random', 'phrase':'Look at a random screen'},
     ]
 },
-    
+    #up revised 2017.11.08
+
     #Interactive fiction
     'No.9':{
     'description':'''
