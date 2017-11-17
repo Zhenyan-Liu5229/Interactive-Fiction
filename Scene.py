@@ -325,7 +325,7 @@ scenes = {
 },
     #up revised 2017.11.08
 
-    #Interactive fiction
+       #Interactive fiction
     'No.9':{
     'description':'''
     Workshop9 -- Interactive Fiction 
@@ -333,8 +333,7 @@ scenes = {
     Can you solve the puzzle in Winchester's Nightmare?
     (Listen to the shell first!)
     Oh god, you spoil my game! You must pay for it!
-    Do what I tell you to do!
-    Now, press 1!
+    Wait, you can't escape!
     ''', #add stanley parable thing into it
     'paths':[
     {'do':'No.4','phrase':'Look at No.4'},
@@ -349,9 +348,10 @@ scenes = {
     Workshop4 -- Digital Poetry
     Poetry.
     You said to yourself.
-    You are never going to like it.
+    You never like it.
+    Nor will you in the future.
     Although thoses flying words look funny.
-    Although you,
+    But you,
     Cannot understand them.
     ''',   
     'paths':[
@@ -368,8 +368,43 @@ scenes = {
     Workshop10 -- MUDs
     Role-playing! I like it!
     Emmmm.How about a wood elf with a pet wolf?
-    Wait, you there, you can't eat my wolf!
-    And whoever pretending to be the god, I suppose you need a rest?
+    Aha, You've got a visitor!
+    ''',
+    'paths':[
+    {'do':'chat', 'phrase':'chat with it'}
+    ]
+},
+
+    'chat':{
+    'description':'''
+    You tried to chat with it but he/she ignored your words.
+    '××× the omnipotent is looking at you.' You saw its speech.
+    It was funny, you think. 
+    'xxx thinks the world boring. He decides to destroy it.'
+    Emmmmm...
+    ''',
+    'paths':[
+    {'do':'stop_him', 'phrase':'stop him from destroying your world'},
+    {'do':'ignore_him', 'phrase':'ignore his existence'}
+    ]
+},
+
+    'stop_him':{
+    'description':'''
+    He was a lunatic. He needed to be stopped.
+    You knew the world of MUDs will not be influenced by this crazy man,
+    But you just don't like his way of speaking.
+    'Shut up please!' You wrote in the room.
+    It seemed to have no effect at all.
+    ''',
+    'paths':[]
+},
+
+    'ignore_him':{
+    'description':'''
+    This man is paobably out of his mind.
+    You didn't want to waste you time on him.
+    You turned your back to look at other screens.
     ''',
     'paths':[
     {'do':'No.3','phrase':'Look at No.3'},
